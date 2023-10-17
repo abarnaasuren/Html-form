@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms by ABARNAA</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="header">
+     <img src = "Assests/Lending.JPG" alt="Lending"/>
+      <h1>Customer Loan Application Form</h1>
+    </div>
+    <div class="container">
+      <form>
+        <div>
+          <h3>Business Contact Information</h3>
+          <label for="customerName">Contact Name</label>
+          <input
+            type="text"
+            name="customerFirstName"
+            id="customerFirstName"
+            placeholder="First Name"
+            required />
+          <input
+            type="text"
+            name="customerFirstName"
+            id="customerLastName"
+            placeholder="Last Name"
+            required />
+          <label for="customerEmail">Email</label>
+          <input
+            type="email"
+            name="customerEmail"
+            id="customerEmail"
+            placeholder="example@email.com"
+            required />
+          <label for="businessDate">In business since:</label>
+          <input title="Select Date" type="date" required />
+          <h4>Address</h4>
+          <label for="streetAddressLine1">Street Address Line 1</label>
+          <input
+            type="text"
+            name="streetAddressLine1"
+            id="streetAddressLine1"
+            placeholder="Enter Address Line 1"
+            required />
+          <label for="streetAddressLine1">Street Address Line 2</label>
+          <input
+            type="text"
+            name="streetAddressLine2"
+            placeholder="Enter Address Line 1"
+            id="streetAddressLine2"
+            required />
+          <label for="cityName">City</label>
+          <input
+            type="text"
+            name="cityName"
+            placeholder="Enter City Name"
+            id="cityName"
+            required />
+          <label for="stateProvince">State / Province</label>
+          <input
+            type="text"
+            name="stateProvince"
+            placeholder="Enter State/ Province"
+            id="stateProvince"
+            required />
+          <label for="PostalZipCode">Postal/ Zip code</label>
+          <input
+            type="text"
+            name="PostalZipCode"
+            id="PostalZipCode"
+            placeholder="Enter Postal/Zip Code"
+            required />
+          <h4><label for="companyStructure">Company Structure</label></h4>
+          <label>
+            <input
+              type="radio"
+              name="companyStructure"
+              value="SoleTrader"
+              id="SoleTrader" />
+            Sole Trader
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="companyStructure"
+              value="PartnerShip"
+              id="PartnerShip" />
+            Partnership
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="companyStructure"
+              value="LimitedLiability"
+              id="LimitedLiability" />
+            Limited Liability
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="companyStructure"
+              value="Others"
+              id="Others" />
+            Others
+          </label>
+        </div>
+        <div>
+          <h3>Business and Credit Information</h3>
+          <label for="phoneNumber">Phone Number</label>
+          <input type="number" placeholder="Enter Contact Number" required />
+          <h4><label for="postalAddress">Postal Address</label></h4>
+          <label for="BstreetAddressLine1">Street Address Line 1</label>
+          <input
+            type="text"
+            name="BstreetAddressLine1"
+            id="BstreetAddressLine1"
+            placeholder="Enter Street Address Line 1"
+            required />
+          <label for="BstreetAddressLine2">Street Address Line 2</label>
+          <input
+            type="text"
+            name="BstreetAddressLine2"
+            id="BstreetAddressLine2"
+            placeholder="Enter Street Address Line 2"
+            required />
+          <label for="cityB">City</label>
+          <input
+            type="text"
+            name="cityB"
+            id="cityB"
+            placeholder="Enter City name"
+            required />
+          <label for="stateProvinceB">State/ Province</label>
+          <input
+            type="text"
+            name="stateProvinceB"
+            id="stateProvinceB"
+            placeholder="Enter State/ Province"
+            required />
+          <label for="postalZipCodeB">Postal/ Zip Code</label>
+          <input
+            type="text"
+            name="postalZipCodeB"
+            id="postalZipCodeB"
+            placeholder="Enter Postal/ Zip Code"
+            required />
+        </div>
+        <div>
+          <h3>Business/Trade References</h3>
+          <h4><label for="refrenceList">References List</label></h4>
+          <input
+            type="text"
+            name="companyName"
+            id="companyName"
+            placeholder="Company Name"
+            required />
+          <input
+            type="text"
+            name="contactName"
+            id="contactName"
+            placeholder="Contact Name"
+            required />
+          <input
+            type="number"
+            name="phoneNumberR"
+            id="phoneNumberR"
+            placeholder="Phone Number"
+            required />
+          <input
+            type="email"
+            name="emailR"
+            id="emailR"
+            placeholder="Enter Email Address"
+            required />
+          <textarea
+            placeholder="Enter the Address of Reference"
+            name="addressR"
+            id="addressR"
+            cols="20"
+            rows="8"></textarea>
+        </div>
+        <div>
+          <h3>TERMS AND CONDITIONS</h3>
+          <ol type="1">
+            <li>
+              <b>CORRECTNESS OF INFORMATION:</b> By submitting this form, you
+              affirm that the information provided herein are true and correct.
+              Any misrepresentation or incorrect information found by the bank
+              shall be cause for denial or rejection of the loan.
+            </li>
+            <li>
+              <b>LOAN INTEREST:</b> The Borrower shall pay the loan in one year
+              with the interest rate of twelve percent (12%) per annum in equal
+              monthly installments to be paid on every fifteenth (15th) day of
+              every month. The interest rate shall be paid on the final payment
+              of the loan period.
+            </li>
+            <li>
+              <b>LATE PAYMENT:</b> Late payments made by the borrower every
+              month shall incur late payment charges of three percent (3%) of
+              the installment amount.
+            </li>
+            <li>
+              <b>ADVANCED PAYMENTS:</b> The Borrower may pay the installments in
+              advance or pay the loan in full at any time.
+            </li>
+            <li>
+              <b>INSURANCE:</b> The Borrower shall pay for the insurance of the
+              loaned amount
+            </li>
+            <li>
+              <b>PAYMENT OF LOAN METHOD:</b> The Borrower shall make payments
+              under this loan either in cash, check, or any negotiable
+              instrument to any branch of the bank.
+            </li>
+            <li>
+              <b>DISPUTES IN CASE OF BREACH:</b> In case of dispute, claim, or
+              controversy arising due to breach of this agreement, the parties
+              may submit to arbitration chosen by both parties. The parties
+              shall divide the cost and expenses to the proceeding in equal
+              shares. Further, the losing party shall pay the cost of attorney's
+              fees of the prevailing party, other than the dispute award.
+            </li>
+            <li>
+              <b>CONFIDENTIALITY:</b> Any information that the bank may acquire
+              through the course of this agreement shall be recognized as
+              Confidential Information. The bank shall keep confidential the
+              confidential information and shall exercise the same degree of
+              care required by law.
+            </li>
+            <li>
+              <b>SEPARABILITY CLAUSE:</b> Should any provision of this Agreement
+              be held invalid by any competent court, the same shall apply only
+              to the provision involved and the remaining provisions hereto
+              shall remain valid and enforceable.
+            </li>
+            <li>
+              <b>AGREEMENT MODIFICATION:</b> Any modifications or alterations to
+              this agreement shall only be considered as agreed by the parties
+              in the existence of a written document signed by both parties.
+            </li>
+            <li>
+              <b>COUNTERPARTS:</b> This agreement may be executed in two or more
+              counterparts each of which shall be deemed an original and all of
+              which together shall constitute one and the same agreement.
+            </li>
+            <li>
+              <b>GOVERNING LAW:</b> This agreement shall be governed by and
+              construed in accordance with and only of the laws of the State of
+              California.
+            </li>
+            <li>
+              <b>RELATIVITY:</b> This agreement inures to the benefit of, and is
+              binding upon the successions and assigns of the parties hereto.
+            </li>
+            <li>
+              <b>NON-WAIVER</b> The failure of any party to insist upon the
+              strict compliance with and performance of any of the terms,
+              conditions, and covenants shal not be deemed as a waiver of said
+              party may have over such breach. Only by expressed written consent
+              and duly signed by the parties may a proper waiver be considered
+              as having been made.
+            </li>
+          </ol>
+        </div>
+        <div class="center">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; <span id="copyrightYear"></span> by ABARNAA B
+      </div>
+      <div class="social-media">
+        <a
+          href="https://github.com/abarnaasuren"
+          target="_blank"
+          title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+         <a
+          href="https://www.linkedin.com/in/abarna-bala-krishanan-964560289/"
+          target="_blank"
+          title="Linedln">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const currentYear = new Date().getFullYear();
+      document.getElementById("copyrightYear").textContent = currentYear;
+    </script>
+  </body>
+</html>
